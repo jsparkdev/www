@@ -1,10 +1,10 @@
 ---
-import { Icon } from 'astro-icon/components'
+import SocialLink from './SocialLink.astro'
 
-const size = 40
 ---
 <nav class="flex gap-4">
-  <a class="hover:opacity-65" href="https://github.com/jsparkdev"><Icon name="logos:github-icon" size={size} /></a>
-  <a class="hover:opacity-65" href="https://bsky.app/profile/jspark.dev"><Icon name="logos:bluesky" size={size} /></a>
-  <a class="hover:opacity-65" href="https://x.com/jsparkdev"><Icon name="logos:twitter" size={size} /></a>
+  <SocialLink href="https://github.com/jsparkdev" icon="logos:github-icon" />
+  <SocialLink href="https://bsky.app/profile/jspark.dev" icon="logos:bluesky" />
+  <SocialLink href="https://x.com/jsparkdev" icon="logos:twitter" />
+  <SocialLink href="https://mastodon.social/@jsparkdev_" icon="logos:mastodon-icon" />
 </nav>

@@ -1,0 +1,15 @@
+---
+import { Icon } from 'astro-icon/components'
+
+interface Props {
+  href: string;
+  icon: string;
+}
+
+const size = 40;
+const { href, icon } = Astro.props;
+---
+
+<a href={href} class="hover:opacity-65" rel="me">
+  <Icon name={icon} size={size} />
+</a>
