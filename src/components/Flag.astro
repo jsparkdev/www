@@ -1,0 +1,23 @@
+<button
+  id="flag-toggle"
+  class="hover:opacity-80"
+  title="South Korea"
+  aria-label="Click to toggle between flag and country name"
+>
+  🇰🇷
+</button>
+
+<script>
+  const button = document.getElementById('flag-toggle');
+  let showFlag = true;
+
+  button?.addEventListener('click', () => {
+    showFlag = !showFlag;
+    if (button) {
+      button.textContent = showFlag ? '🇰🇷' : 'South Korea';
+      button.setAttribute('aria-label',
+        showFlag ? 'Click to show country name' : 'Click to show flag'
+      );
+    }
+  });
+</script>
