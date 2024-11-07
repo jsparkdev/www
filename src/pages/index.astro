@@ -1,11 +1,12 @@
 ---
 import SocialIcons from '../components/SocialIcons.astro';
 import BaseHead from '../components/BaseHead.astro';
+import { DESCRIPTION, TITLE } from '../consts';
 ---
 
 <html lang="en">
 	<head>
-	 <BaseHead />
+	 <BaseHead title={TITLE} description={DESCRIPTION} />
 	</head>
 	<body class="antialiased select-none flex justify-center items-center h-[100dvh]">
   	<main class="space-y-2 px-8">

@@ -1,9 +1,12 @@
 ---
-const title = 'Junseong Park';
-const description = "Junseong Park's personal website";
+interface Props {
+	title: string;
+	description: string;
+	image?: string;
+}
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const image = new URL('og.png', Astro.url);
+const { title, description, image = '/og.png' } = Astro.props;
 ---
 
 <!-- Global Metadata -->
