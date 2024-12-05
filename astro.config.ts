@@ -1,13 +1,14 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
 
 export default defineConfig({
   site: "https://jspark.dev",
-  integrations: [tailwind(), icon()],
+  integrations: [icon()],
   vite: {
     build: {
       target: "esnext",
     },
+    plugins: [tailwindcss()],
   },
 });
