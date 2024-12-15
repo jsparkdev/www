@@ -1,9 +1,17 @@
 ---
-import SocialLink from './SocialLink.astro'
-
+import Link from './Link.astro'
+import Github from "~/assets/github.svg"
+import BlueSky from "~/assets/bluesky.svg"
+import Twitter from "~/assets/twitter.svg"
 ---
 <nav class="flex flex-wrap gap-3">
-  <SocialLink href="https://github.com/jsparkdev" icon="logos:github-icon" label='Github' />
-  <SocialLink href="https://bsky.app/profile/jspark.dev" icon="logos:bluesky" label='Bluesky' />
-  <SocialLink href="https://x.com/jsparkdev" icon="logos:twitter" label='Twitter' />
+  <Link href="https://github.com/jsparkdev" label='Github'>
+    <Github size={32} />
+  </Link>
+  <Link href="https://bsky.app/profile/jspark.dev" label='Bluesky'>
+    <BlueSky size={32} />
+  </Link>
+  <Link href="https://x.com/jsparkdev" label='Twitter'>
+    <Twitter size={32} />
+  </Link>
 </nav>

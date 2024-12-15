@@ -1,4 +1,4 @@
 const TITLE = "Junseong Park";
-const DESCRIPTION = "Junseong Park's personal website";
+const DESCRIPTION = "Junseong Park";
 
 export { TITLE, DESCRIPTION };
