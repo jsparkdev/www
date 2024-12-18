@@ -1,5 +1,5 @@
 ---
-import { TITLE } from '~/consts';
+import { METADATA } from '~/utils/constants';
 
 interface Props {
 	title: string;
@@ -33,7 +33,7 @@ const { title, description, image = '/og.png' } = Astro.props;
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
-<meta property="og:site_name" content={TITLE}>
+<meta property="og:site_name" content={METADATA.TITLE}>
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
 

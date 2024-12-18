@@ -2,8 +2,10 @@
 import '~/styles/tailwind.css';
 import SocialIcons from '~/components/SocialIcons.astro';
 import BaseHead from '~/components/BaseHead.astro';
-import { DESCRIPTION, TITLE } from '~/consts';
+import { METADATA } from '~/utils/constants';
 import Flag from '~/components/Flag.astro';
+
+const { TITLE, DESCRIPTION } = METADATA
 ---
 
 <html lang="en">
