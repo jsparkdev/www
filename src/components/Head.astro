@@ -1,8 +1,5 @@
 ---
-const title = "Junseong Park";
-const description =
-    "Frontend Developer, Open Source Contributor, Product Engineer";
-const socialImageURL = "https://jspark.dev/huston.jpg";
+import { DESCRIPTION, SOCIAL_IMAGE_URL, TITLE } from '~/const'
 ---
 
 <meta charset="UTF-8" />
@@ -11,23 +8,23 @@ const socialImageURL = "https://jspark.dev/huston.jpg";
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link
-    rel="preload"
-    href="/jetbrains-mono.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
+  rel="preload"
+  href="/jetbrains-mono.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
 />
 
-<title>{title}</title>
-<meta name="description" content={description} />
+<title>{TITLE}</title>
+<meta name="description" content={DESCRIPTION} />
 
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
+<meta property="og:title" content={TITLE} />
+<meta property="og:description" content={DESCRIPTION} />
 <meta property="og:url" content="https://jspark.dev" />
-<meta property="og:image" content={socialImageURL} />
+<meta property="og:image" content={SOCIAL_IMAGE_URL} />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content={title} />
-<meta name="twitter:description" content={description} />
+<meta name="twitter:title" content={TITLE} />
+<meta name="twitter:description" content={DESCRIPTION} />
 <meta name="twitter:creator" content="@jsparkdev" />
-<meta name="twitter:image" content={socialImageURL} />
+<meta name="twitter:image" content={SOCIAL_IMAGE_URL} />

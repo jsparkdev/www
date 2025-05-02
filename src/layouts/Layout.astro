@@ -1,18 +1,18 @@
 ---
-import Head from "~/components/Head.astro";
-import "~/styles/global.css";
+import Head from '~/components/Head.astro'
+import '~/styles/global.css'
 ---
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <Head />
-    </head>
-    <body
-        class="bg-[#030712] text-white antialiased font-mono min-h-[100dvh] flex items-center"
-    >
-        <main class="w-[320px] mx-auto px-6 sm:px-0 pb-20">
-            <slot />
-        </main>
-    </body>
+  <head>
+    <Head />
+  </head>
+  <body
+    class="bg-[#030712] text-white antialiased font-mono min-h-[100dvh] flex items-center"
+  >
+    <main class="w-[320px] mx-auto px-6 sm:px-0 pb-20">
+      <slot />
+    </main>
+  </body>
 </html>

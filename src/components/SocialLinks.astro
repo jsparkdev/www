@@ -1,40 +1,23 @@
 ---
-const links = [
-    {
-        title: "Github",
-        url: "https://github.com/jsparkdev",
-    },
-    {
-        title: "X",
-        url: "https://x.com/jsparkdev",
-    },
-    {
-        title: "BlueSky",
-        url: "https://bsky.app/profile/jspark.dev",
-    },
-    {
-        title: "LinkedIn",
-        url: "https://linkedin.com/in/jsparkdev",
-    },
-];
+import { SOCIAL_LINKS } from '~/const'
 ---
 
 <nav aria-label="social-media-links">
-    <ul class="flex gap-4 text-sm font-semibold">
-        {
-            links.map((link) => (
-                <li>
-                    <a
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`${link.title} Profile`}
-                        class="hover:underline underline-offset-4"
-                    >
-                        {link.title}
-                    </a>
-                </li>
-            ))
-        }
-    </ul>
+  <ul class="flex gap-4 text-sm font-semibold">
+    {
+      SOCIAL_LINKS.map(link => (
+        <li>
+          <a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${link.title} Profile`}
+            class="hover:underline underline-offset-4"
+          >
+            {link.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </nav>
