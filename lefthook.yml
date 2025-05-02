@@ -1,0 +1,9 @@
+pre-commit:
+  commands:
+    lint:
+      run: bun lint
+
+pre-push:
+  commands:
+    build:
+      run: bun run build
