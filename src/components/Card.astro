@@ -1,0 +1,11 @@
+---
+import About from '~/components/About.astro'
+import SocialLinks from '~/components/SocialLinks.astro'
+import { TITLE } from '~/const'
+---
+
+<div class="min-w-[320px] max-w-3xl mx-auto px-6 pb-20 text-white font-mono">
+  <h1 class="text-3xl font-bold">{TITLE}</h1>
+  <About />
+  <SocialLinks />
+</div>
