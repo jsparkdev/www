@@ -1,23 +1,22 @@
 ---
-import { SOCIAL_LINKS } from '~/const'
+import IconBlueSky from '../assets/icon-bluesky.svg'
+import IconGithub from '../assets/icon-github.svg'
+import IconLinkedIn from '../assets/icon-linkedin.svg'
+import IconX from '../assets/icon-x.svg'
+import SocialLink from './SocialLink.astro';
 ---
 
-<nav aria-label="social-media-links">
-  <ul class="flex gap-4 text-sm font-semibold">
-    {
-      SOCIAL_LINKS.map(link => (
-        <li>
-          <a
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${link.title} Profile`}
-            class="hover:underline underline-offset-4"
-          >
-            {link.title}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+<nav title="social-media-links" class="flex gap-3">
+  <SocialLink href="https://github.com/jsparkdev" title="Github">
+    <IconGithub width={28} height={28} />
+  </SocialLink>
+  <SocialLink href="https://linkedin.com/in/jsparkdev" title="LinkedIn">
+    <IconLinkedIn width={28} height={28} />
+  </SocialLink>
+  <SocialLink href="https://x.com/jsparkdev" title="X">
+    <IconX width={28} height={28} />
+  </SocialLink>
+  <SocialLink href="https://bsky.app/profile/jspark.dev" title="BlueSky">
+    <IconBlueSky width={28} height={28} />
+  </SocialLink>
 </nav>
